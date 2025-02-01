@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Monarch Homepage</title>
+    <!-- Link to the dark purple theme styles -->
+    <link rel="stylesheet" href="./CSS/dark-purple-theme.css">
+    <!-- Link to the shadow animations styles -->
+    <link rel="stylesheet" href="./CSS/shadow-animations.css">
+    <style>
+        /* Additional inline styles for better layout */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 90vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .search-bar {
+            width: 60%;
+            margin: 20px 0;
+        }
+
+        .quick-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="clock" id="clock"></div>
+        <div class="search-bar">
+            <form id="searchForm" action="https://www.google.com/search" method="get">
+                <input type="text" name="q" placeholder="Search the web...">
+            </form>
+        </div>
+        <div class="quick-links">
+            <a href="https://www.youtube.com">YouTube</a>
+            <a href="https://www.github.com">GitHub</a>
+            <a href="https://www.facebook.com">Facebook</a>
+        </div>
+    </div>
+    <script>
+        // Update the clock
+        function updateClock() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            document.getElementById("clock").textContent = `${hours}:${minutes}:${seconds}`;
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+</body>
+</html>

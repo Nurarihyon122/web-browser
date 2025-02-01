@@ -1,0 +1,54 @@
+/* dark-purple-theme.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #3b3b5e);
+    color: #d1c4f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.clock {
+    font-size: 3rem;
+    color: #d1c4f0;
+    text-shadow: 0 0 10px #7a5aca, 0 0 20px #5a47a2;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #26244c;
+    color: #d1c4f0;
+    box-shadow: 0 0 8px #5a47a2;
+    outline: none;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.search-bar input:focus {
+    box-shadow: 0 0 12px #7a5aca;
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: #d1c4f0;
+    padding: 10px 20px;
+    border: 2px solid #7a5aca;
+    border-radius: 5px;
+    background-color: #26244c;
+    transition: all 0.3s;
+    box-shadow: 0 0 8px #5a47a2;
+}
+
+.quick-links a:hover {
+    background-color: #7a5aca;
+    color: #fff;
+    box-shadow: 0 0 12px #7a5aca;
+}

@@ -1,0 +1,128 @@
+/* Main window background and text color */
+QMainWindow {
+    background: linear-gradient(135deg, #1e1e2f, #3b3b5e);
+    color: #d1c4f0;
+    border: 1px solid #7a5aca;
+}
+
+/* Central widget styling */
+QWidget {
+    background-color: #1e1e2f;
+    color: #d1c4f0;
+}
+
+/* Toolbars (Navigation bar background) */
+QToolBar {
+    background: linear-gradient(135deg, #26244c, #3b3b5e);
+    border-bottom: 2px solid #7a5aca;
+    padding: 5px;
+}
+
+/* URL Bar styling */
+QLineEdit {
+    background-color: #26244c;
+    color: #d1c4f0;
+    border: 2px solid #7a5aca;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #9b80e2;
+    box-shadow: 0 0 8px #7a5aca;
+}
+
+/* Buttons styling */
+QPushButton {
+    background-color: #26244c;
+    color: #d1c4f0;
+    border: 2px solid #7a5aca;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+QPushButton:hover {
+    background-color: #7a5aca;
+    color: white;
+}
+
+QPushButton:pressed {
+    background-color: #5a47a2;
+    color: #fff;
+}
+
+/* Tab Widget styling */
+QTabWidget::pane {
+    border: 1px solid #7a5aca;
+    background-color: #26244c;
+}
+
+QTabBar::tab {
+    background-color: #26244c;
+    color: #d1c4f0;
+    padding: 8px 16px;
+    border: 1px solid #7a5aca;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-right: 2px;
+}
+
+QTabBar::tab:selected {
+    background-color: #7a5aca;
+    color: white;
+    border-bottom: 2px solid #d1c4f0;
+}
+
+QTabBar::tab:hover {
+    background-color: #5a47a2;
+}
+
+/* Table (History) styling */
+QTableWidget {
+    background-color: #26244c;
+    color: #d1c4f0;
+    gridline-color: #7a5aca;
+    border: 1px solid #7a5aca;
+}
+
+QTableWidget::item {
+    padding: 5px;
+    color: #d1c4f0;
+}
+
+QHeaderView::section {
+    background-color: #7a5aca;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    border: 1px solid #5a47a2;
+}
+
+/* Scrollbars */
+QScrollBar:vertical, QScrollBar:horizontal {
+    background: #26244c;
+    border: 1px solid #7a5aca;
+    width: 12px;
+    height: 12px;
+}
+
+QScrollBar::handle {
+    background: #7a5aca;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:hover {
+    background: #9b80e2;
+}
+
+QScrollBar::add-line, QScrollBar::sub-line {
+    background: #26244c;
+    border: 1px solid #7a5aca;
+}
+
+QScrollBar::add-page, QScrollBar::sub-page {
+    background: none;
+}
